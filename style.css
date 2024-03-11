@@ -1,0 +1,136 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://w.forfun.com/fetch/04/0459522bc2cc584ff0a816ccae010285.jpeg");
+    background-color: #fff;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+
+}
+
+.card {
+    width:90%;
+    max-width: 470px;
+    min-width: 400px;
+    background-color: rgba(200,200,200,.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    color:#fff;
+    margin:100px auto 0;
+    border-radius: 20px;
+    padding:40px 35px;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.search {
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border:0;
+    outline:0;
+    background: #ebfffc;
+    color:#555;
+    padding:10px 25px;
+    height:50px;
+    border-radius: 30px;
+    flex:1;
+    margin-right: 16px;
+    font-size: 18px;
+    min-width: 200px;
+}
+
+.search button {
+    border:0;
+    outline:0;
+    background: #ebfffc;
+    border-radius: 50%;
+    min-width: 50px;
+    min-height: 50px;
+    cursor: pointer;
+}
+
+.search button i {
+    font-size: 20px;
+    font-style: bold;
+}
+
+.weather-icon {
+    width: 170px;
+    margin-top:30px;
+}
+
+.weather h1 {
+    font-size:80px;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size:45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 40px;
+    margin-right:10px;
+}
+
+.humidity, .wind {
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.weather {
+    display: none;
+}
+
+.error {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+@media screen and (max-width:400px){
+    .card {
+        width: 100%;
+        border-radius: 0;
+        position: absolute;
+        margin: 0;
+    }
+}
+
+
+
+
+
+
+
