@@ -48,7 +48,6 @@
 const apikey = "871acfc2fe54016f74b3546725597f90";
 const apiurl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 const searchBox = document.querySelector(".search input");
-const searchBtn = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon");
 const weatherDiv = document.querySelector(".weather");
 async function checkWeather(city){
@@ -95,11 +94,6 @@ const photoUrl = "https://places.googleapis.com/v1/NAME/media?key=API_KEY&PARAME
 async function changeBackground(city){
 
 }
-
-
-searchBtn.addEventListener("click",()=>{
-    checkWeather(searchBox.value);
-})
 
 searchBox.addEventListener("keydown",(e)=>{
 if(e.key=="Enter"){
