@@ -50,9 +50,6 @@ const searchBox = document.querySelector(".search input");
 const weatherIcon = document.querySelector(".weather-icon");
 const weatherDiv = document.querySelector(".weather");
 
-const searchBox = document.querySelector(".search input");
-const weatherIcon = document.querySelector(".weather-icon");
-const weatherDiv = document.querySelector(".weather");
 
 async function checkWeather(city) {
   const response = await fetch(`/.netlify/functions/weather?city=${city}`);
